@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=+16_Switch Pin=U5-6
+Removed Pin From Net: NetName=+16_Switch Pin=U5-7
+Removed Pin From Net: NetName=+16 Pin=U5-8
+Added Pin To Net: NetName=+12 Pin=U5-8
+Added Pin To Net: NetName=LED_Switch Pin=U5-6
+Added Pin To Net: NetName=LED_Switch Pin=U5-7
+Added Net: Name=LED_Switch

@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=PGND Pin=P1--
+Removed Pin From Net: NetName=PGND Pin=P2--
+Removed Pin From Net: NetName=IN_16 Pin=P8-+
+Removed Pin From Net: NetName=PGND Pin=P8--
+Removed Pin From Net: NetName=+16 Pin=P9-+
+Removed Pin From Net: NetName=PGND Pin=P9--
+Removed Pin From Net: NetName=direct_12 Pin=P13-1
+Removed Pin From Net: NetName=GND Pin=P13-2
+Removed Pin From Net: NetName=+12 Pin=P14-1
+Removed Pin From Net: NetName=GND Pin=P14-2
+Removed Pin From Net: NetName=direct_12 Pin=P17-+
+Removed Pin From Net: NetName=direct_12 Pin=P19-1
+Removed Pin From Net: NetName=GND Pin=P19-2
+Removed Pin From Net: NetName=+12 Pin=P20-1
+Removed Pin From Net: NetName=GND Pin=P20-2
+Removed Member From Class: ClassName=Power_Taghsim Member=P8
+Removed Member From Class: ClassName=Power_Taghsim Member=P9
+Removed Member From Class: ClassName=Power_Taghsim Member=P19
+Removed Member From Class: ClassName=Power_Taghsim Member=P20
+Change Component Comment : Designator=P13 Old Comment=Ghofl dar New Comment=XT30
+Change Component Comment : Designator=P14 Old Comment=Ghofl dar New Comment=XT30
+Added Pin To Net: NetName=IN_16 Pin=P1--
+Added Pin To Net: NetName=+16 Pin=P2--
+Added Pin To Net: NetName=direct_12 Pin=P14-1
+Added Pin To Net: NetName=direct_12 Pin=P14-2
+Added Pin To Net: NetName=IN_12 Pin=P13-1
+Added Pin To Net: NetName=IN_12 Pin=P13-2
+Added Pin To Net: NetName=IN_12 Pin=P17-+
+Added Net: Name=IN_12
+Added Member To Class: ClassName=Power_Taghsim Member=Component L? 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L? 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L? 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L? 

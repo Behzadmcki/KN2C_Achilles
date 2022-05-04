@@ -1,0 +1,9 @@
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "17-Jul-2002: Re-released for DXP Platform."; VariantName = "[No Variations]"
+Added Component: Designator=Camera_power3(jp circular 2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "17-Jul-2002: Re-released for DXP Platform."; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=Camera_power3-1
+Added Pin To Net: NetName=+12 Pin=Camera_power3-2
+Added Member To Class: ClassName=head(mehdi) Member=Component Camera_power3 Header 2

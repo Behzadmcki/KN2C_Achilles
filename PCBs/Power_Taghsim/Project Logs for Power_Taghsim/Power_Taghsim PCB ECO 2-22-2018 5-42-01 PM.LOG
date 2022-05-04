@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=C1 Old Footprint=CAP 470uf sleep smd New Footprint=Cap Alireza montazeri
+Change Component Footprint: Designator=C2 Old Footprint=CAP 470uf sleep smd New Footprint=Cap Alireza montazeri
+Change Component Footprint: Designator=C3 Old Footprint=CAP 470uf sleep smd New Footprint=Cap Alireza montazeri
+Added Member To Class: ClassName=Power_Taghsim Member=Component P? Fan
+Added Member To Class: ClassName=Power_Taghsim Member=Component P? Fan
+Added Member To Class: ClassName=Power_Taghsim Member=Component P? 
+Added Member To Class: ClassName=Power_Taghsim Member=Component P? 

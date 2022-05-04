@@ -1,0 +1,12 @@
+Added Component: Designator=S1(Screw Holw 3-6 mm)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S2(Screw Holw 3-6 mm)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S3(Screw Holw 3-6 mm)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S4(Screw Holw 3-6 mm)
+Add component. Clean all parameters for all variants
+Added Member To Class: ClassName=drivers Member=Component S1 Screw Hole
+Added Member To Class: ClassName=drivers Member=Component S2 Screw Hole
+Added Member To Class: ClassName=drivers Member=Component S3 Screw Hole
+Added Member To Class: ClassName=drivers Member=Component S4 Screw Hole

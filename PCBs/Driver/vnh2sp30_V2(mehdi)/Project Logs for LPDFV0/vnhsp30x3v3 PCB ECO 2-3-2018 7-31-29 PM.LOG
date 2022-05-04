@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=P5-2
+Removed Pin From Net: NetName=+5 Pin=R35-1
+Removed Pin From Net: NetName=Fan_5v Pin=R35-2
+Removed Member From Class: ClassName=drivers Member=R35
+Added Pin To Net: NetName=+5 Pin=P5-2

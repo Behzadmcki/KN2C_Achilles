@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=RXUSART Pin=R1-2
+Removed Pin From Net: NetName=RXUSART Pin=U2-1
+Removed Pin From Net: NetName=EN_max Pin=U2-2
+Removed Pin From Net: NetName=EN_max Pin=U2-3
+Removed Pin From Net: NetName=TXUSART Pin=U2-4
+Added Pin To Net: NetName=TXUSART Pin=U1-30
+Added Pin To Net: NetName=RXUSART Pin=U1-31
+Change Net Name : Old Net Name=TXUSART New Net Name=1wire
+Added Pin To Net: NetName=Bus_EN_max Pin=U2-2
+Added Pin To Net: NetName=Bus_EN_max Pin=U2-3
+Added Net: Name=Bus_EN_max
+Added Pin To Net: NetName=Bus_RXUSART Pin=R1-2
+Added Pin To Net: NetName=Bus_RXUSART Pin=U1-13
+Added Pin To Net: NetName=Bus_RXUSART Pin=U2-1
+Added Net: Name=Bus_RXUSART
+Added Pin To Net: NetName=Bus_TXUSART Pin=U1-12
+Added Pin To Net: NetName=Bus_TXUSART Pin=U2-4
+Added Net: Name=Bus_TXUSART

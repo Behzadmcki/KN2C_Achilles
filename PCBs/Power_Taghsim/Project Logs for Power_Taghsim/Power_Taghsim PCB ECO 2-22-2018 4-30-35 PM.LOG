@@ -1,0 +1,158 @@
+Removed Pin From Net: NetName=IN_12 Pin=P15-2
+Removed Pin From Net: NetName=direct_12 Pin=P16-1
+Removed Pin From Net: NetName=direct_12 Pin=P16-2
+Removed Member From Class: ClassName=Power_Taghsim Member=P16
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "470uf"; VariantName = "[No Variations]"
+Added Component: Designator=C1(CAP 470uf sleep smd)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "470uf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "470uf"; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAP 470uf sleep smd)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "470uf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "470uf"; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAP 470uf sleep smd)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "470uf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Added Component: Designator=L1(R3P)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Added Component: Designator=L2(R3P)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Added Component: Designator=L3(R3P)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Added Component: Designator=L4(R3P)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Added Component: Designator=L5(R3P)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Added Component: Designator=L6(R3P)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubClass"; Value = "Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100uH"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+16 Pin=C1-1
+Added Pin To Net: NetName=PGND Pin=C1-2
+Added Pin To Net: NetName=+16 Pin=C2-1
+Added Pin To Net: NetName=PGND Pin=C2-2
+Added Pin To Net: NetName=+12 Pin=C3-1
+Added Pin To Net: NetName=PGND Pin=C3-2
+Added Pin To Net: NetName=PGND Pin=L1-1
+Added Pin To Net: NetName=GND Pin=L1-2
+Added Pin To Net: NetName=PGND Pin=L2-1
+Added Pin To Net: NetName=GND Pin=L2-2
+Added Pin To Net: NetName=PGND Pin=L3-1
+Added Pin To Net: NetName=GND Pin=L3-2
+Added Pin To Net: NetName=PGND Pin=L4-1
+Added Pin To Net: NetName=GND Pin=L4-2
+Added Pin To Net: NetName=PGND Pin=L5-1
+Added Pin To Net: NetName=GND Pin=L5-2
+Added Pin To Net: NetName=PGND Pin=L6-1
+Added Pin To Net: NetName=GND Pin=L6-2
+Added Pin To Net: NetName=direct_12 Pin=P15-2
+Added Member To Class: ClassName=Power_Taghsim Member=Component C1 Cap Pol1
+Added Member To Class: ClassName=Power_Taghsim Member=Component C2 Cap Pol1
+Added Member To Class: ClassName=Power_Taghsim Member=Component C3 Cap Pol1
+Added Member To Class: ClassName=Power_Taghsim Member=Component L1 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L2 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L3 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L4 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L5 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L6 

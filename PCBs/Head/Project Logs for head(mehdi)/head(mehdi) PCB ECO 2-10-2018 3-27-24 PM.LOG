@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=+3.3 Pin=R4-2
+Removed Pin From Net: NetName=+3.3 Pin=R5-2
+Removed Member From Class: ClassName=head(mehdi) Member=R4
+Removed Member From Class: ClassName=head(mehdi) Member=R5
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole

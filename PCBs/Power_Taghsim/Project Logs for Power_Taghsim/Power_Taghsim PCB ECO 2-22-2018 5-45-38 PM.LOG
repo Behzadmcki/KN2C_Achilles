@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+16 Pin=C1-1
+Removed Pin From Net: NetName=PGND Pin=C1-2
+Removed Pin From Net: NetName=PGND Pin=C3-2
+Removed Member From Class: ClassName=Power_Taghsim Member=C1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Member To Class: ClassName=Power_Taghsim Member=Component P? Fan
+Added Member To Class: ClassName=Power_Taghsim Member=Component P? Fan
+Added Member To Class: ClassName=Power_Taghsim Member=Component P? 
+Added Member To Class: ClassName=Power_Taghsim Member=Component P? 

@@ -1,0 +1,43 @@
+Removed Member From Class: ClassName=Power_Taghsim Member=P17
+Removed Member From Class: ClassName=Power_Taghsim Member=P18
+Change Component Designator: OldDesignator=C1 NewDesignator=C2
+Change Component Designator: OldDesignator=C2 NewDesignator=C1
+Change Component Designator: OldDesignator=L? NewDesignator=L2
+Change Component Designator: OldDesignator=L? NewDesignator=L3
+Change Component Designator: OldDesignator=L? NewDesignator=L4
+Change Component Designator: OldDesignator=L? NewDesignator=L5
+Change Component Designator: OldDesignator=L? NewDesignator=L6
+Change Component Designator: OldDesignator=P1 NewDesignator=P8
+Change Component Designator: OldDesignator=P2 NewDesignator=P9
+Change Component Designator: OldDesignator=P3 NewDesignator=P1
+Change Component Designator: OldDesignator=P4 NewDesignator=P2
+Change Component Designator: OldDesignator=P5 NewDesignator=P3
+Change Component Designator: OldDesignator=P6 NewDesignator=P4
+Change Component Designator: OldDesignator=P7 NewDesignator=P5
+Change Component Designator: OldDesignator=P10 NewDesignator=P6
+Change Component Designator: OldDesignator=P11 NewDesignator=P7
+Change Component Designator: OldDesignator=P12 NewDesignator=P10
+Change Component Designator: OldDesignator=P13 NewDesignator=P15
+Change Component Designator: OldDesignator=P14 NewDesignator=P16
+Change Component Designator: OldDesignator=P15 NewDesignator=P12
+Change Component Designator: OldDesignator=P16 NewDesignator=P13
+Change Component Designator: OldDesignator=P17 NewDesignator=P11
+Change Component Designator: OldDesignator=P18 NewDesignator=P14
+Added Component: Designator=Mp?(MP1584_3A)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=Mp?-1
+Added Pin To Net: NetName=GND Pin=Mp?-1
+Added Pin To Net: NetName=+12 Pin=Mp?-2
+Added Pin To Net: NetName=+12 Pin=Mp?-2
+Added Pin To Net: NetName=GND Pin=Mp?-3
+Added Pin To Net: NetName=GND Pin=Mp?-3
+Added Pin To Net: NetName=+5 Pin=Mp?-4
+Added Pin To Net: NetName=+5 Pin=Mp?-4
+Added Net: Name=+5
+Added Member To Class: ClassName=Power_Taghsim Member=Component L2 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L3 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L4 
+Added Member To Class: ClassName=Power_Taghsim Member=Component L5 
+Added Member To Class: ClassName=Power_Taghsim Member=Component Mp? Mp1584
+Added Member To Class: ClassName=Power_Taghsim Member=Component P8 XT60
+Added Member To Class: ClassName=Power_Taghsim Member=Component P9 XT60

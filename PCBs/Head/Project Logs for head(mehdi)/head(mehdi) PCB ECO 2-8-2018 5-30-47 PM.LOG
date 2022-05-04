@@ -1,0 +1,20 @@
+Add component (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TPS2553DRVT-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SON-6 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "1.41 USD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U7(SON65P210X210X80-7N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TPS2553DRVT-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SON-6 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "1.41 USD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetThermal1_1 Pin=U7-1
+Added Pin To Net: NetName=NetR23_2 Pin=U7-2
+Added Pin To Net: NetName=Thermal_EN Pin=U7-4
+Added Pin To Net: NetName=+5 Pin=U7-6
+Added Pin To Net: NetName=GND Pin=U7-7
+Added Member To Class: ClassName=head(mehdi) Member=Component U7 TPS2553DRVT-1

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Net95_2 Pin=Thermal1-1
+Removed Pin From Net: NetName=GND Pin=Thermal1-2
+Added Pin To Net: NetName=GND Pin=Thermal1-1
+Added Pin To Net: NetName=Net95_2 Pin=Thermal1-2

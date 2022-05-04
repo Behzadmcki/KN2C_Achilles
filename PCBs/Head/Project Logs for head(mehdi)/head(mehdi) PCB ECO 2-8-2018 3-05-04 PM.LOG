@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=PGND Pin=JP1-1
+Removed Pin From Net: NetName=+3.3 Pin=Q1-3
+Removed Pin From Net: NetName=Thermal Pin=R25-2
+Removed Member From Class: ClassName=head(mehdi) Member=JP1
+Removed Member From Class: ClassName=head(mehdi) Member=Q1
+Removed Member From Class: ClassName=head(mehdi) Member=R22
+Removed Member From Class: ClassName=head(mehdi) Member=R23
+Removed Member From Class: ClassName=head(mehdi) Member=R25
+Change Component Footprint: Designator=servo 1 Old Footprint=HDR1X3 New Footprint=jp circular 3
+Added Room: Name=head(mehdi)

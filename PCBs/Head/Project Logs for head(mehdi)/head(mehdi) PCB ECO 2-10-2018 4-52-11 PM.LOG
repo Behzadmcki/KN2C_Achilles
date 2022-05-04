@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=LED_blue Pin=U1-21
+Added Pin To Net: NetName=Servo_16_EN Pin=U1-22
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole

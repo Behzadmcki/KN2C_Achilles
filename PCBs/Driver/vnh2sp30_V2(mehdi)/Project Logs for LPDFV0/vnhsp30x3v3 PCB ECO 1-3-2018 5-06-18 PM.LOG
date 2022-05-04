@@ -1,0 +1,8 @@
+Added Component: Designator=Mp1584(mp1584-1.8)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=Mp1584-1
+Added Pin To Net: NetName=+12 Pin=Mp1584-2
+Added Pin To Net: NetName=GND Pin=Mp1584-3
+Added Pin To Net: NetName=ADJ_5v Pin=Mp1584-4
+Added Net: Name=ADJ_5v
+Added Member To Class: ClassName=drivers Member=Component Mp1584

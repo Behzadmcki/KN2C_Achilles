@@ -1,0 +1,15 @@
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Micro switch(HDR2X6H)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=Micro switch-2
+Added Pin To Net: NetName=GND Pin=Micro switch-4
+Added Pin To Net: NetName=GND Pin=Micro switch-6
+Added Pin To Net: NetName=GND Pin=Micro switch-8
+Added Pin To Net: NetName=GND Pin=Micro switch-10
+Added Pin To Net: NetName=GND Pin=Micro switch-12
+Added Member To Class: ClassName=drivers Member=Component Micro switch 

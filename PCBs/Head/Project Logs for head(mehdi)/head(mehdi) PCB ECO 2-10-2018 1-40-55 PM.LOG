@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=PGND Pin=C6-1
+Removed Pin From Net: NetName=PGND Pin=C7-1
+Removed Pin From Net: NetName=PGND Pin=C10-1
+Removed Pin From Net: NetName=PGND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1

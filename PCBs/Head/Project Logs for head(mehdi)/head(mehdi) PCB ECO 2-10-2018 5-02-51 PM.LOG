@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=ex_ADC Pin=U1-10
+Removed Pin From Net: NetName=gas_sensor Pin=U1-11
+Added Pin To Net: NetName=gas_sensor Pin=U1-10
+Added Pin To Net: NetName=ex_ADC Pin=U1-11
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole
+Added Member To Class: ClassName=head(mehdi) Member=Component S? Screw Hole

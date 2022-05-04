@@ -1,0 +1,26 @@
+PCAD Importer Log
+Project : TPS2553DRVT-1.LibPkg
+
+Section : C:\Users\Mohsen\Desktop\New folder\TPS2553DRVT-1.lia
+    Section : PCB Library - TPS2553DRVT-1.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token TPS2553DRVT-1 On Line 118
+            Warning - 1 : Skipping Token attachedSymbol On Line 214
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - TPS2553DRVT-1.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token multiLayer On Line 96
+            Warning - 1 : Skipping Token layerContents On Line 105
+        EndSection
+
+        Section : Generating SCH Library - TPS2553DRVT-1.SchLib
+        EndSection
+    EndSection
+EndSection

@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=GND Pin=95-1
+Added Pin To Net: NetName=Net95_2 Pin=95-2
+Added Pin To Net: NetName=Net95_2 Pin=Thermal1-1
+Added Pin To Net: NetName=Net95_2 Pin=U7-1
+Added Net: Name=Net95_2

@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PGND Pin=R31-2
+Removed Pin From Net: NetName=PGND Pin=R32-2
+Removed Pin From Net: NetName=PGND Pin=R33-2
+Added Pin To Net: NetName=GND Pin=R31-2
+Added Pin To Net: NetName=GND Pin=R32-2
+Added Pin To Net: NetName=GND Pin=R33-2
+Added Member To Class: ClassName=drivers Member=Component Micro switch 

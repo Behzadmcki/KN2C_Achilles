@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=Current2 Pin=CONTROL1-5
+Removed Pin From Net: NetName=Current3 Pin=CONTROL1-13
+Removed Pin From Net: NetName=CURRENT1 Pin=CONTROL1-25
+Added Pin To Net: NetName=Current11 Pin=CONTROL1-25
+Added Net: Name=Current11
+Added Pin To Net: NetName=Current22 Pin=CONTROL1-5
+Added Net: Name=Current22
+Added Pin To Net: NetName=Current33 Pin=CONTROL1-13
+Added Net: Name=Current33
+Added Member To Class: ClassName=drivers Member=Component CONTROL1 

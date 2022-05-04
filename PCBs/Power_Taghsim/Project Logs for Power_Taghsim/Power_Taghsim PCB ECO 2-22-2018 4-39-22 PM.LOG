@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=P11 Old Footprint=XT-60 New Footprint=XT-30
+Change Component Comment : Designator=P11 Old Comment=XT60 New Comment=XT30
+Added Member To Class: ClassName=Power_Taghsim Member=Component P14 XT30

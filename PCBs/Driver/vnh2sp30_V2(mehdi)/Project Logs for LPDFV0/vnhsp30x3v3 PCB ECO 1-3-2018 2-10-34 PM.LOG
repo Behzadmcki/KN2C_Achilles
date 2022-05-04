@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=VNHPGND Pin=Q1-4
+Removed Pin From Net: NetName=VNHPGND Pin=Q3-4
+Added Pin To Net: NetName=VNHPGND Pin=Q1-3
+Added Pin To Net: NetName=PGND Pin=Q1-4
+Added Pin To Net: NetName=VNHPGND Pin=Q3-3
+Added Pin To Net: NetName=PGND Pin=Q3-4

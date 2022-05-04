@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=+5 Pin=CONTROL1-29
+Removed Pin From Net: NetName=+5 Pin=CONTROL1-30
+Removed Pin From Net: NetName=GND Pin=CONTROL1-31
+Removed Pin From Net: NetName=GND Pin=CONTROL1-32
+Change Component DesignItemId : Designator=CONTROL1 Old DesignItemId=Header 16X2H New DesignItemId=Header 17X2H
+Change Component Footprint: Designator=CONTROL1 Old Footprint=HDR2X16H New Footprint=HDR2X17H
+Change Component Description : Designator=CONTROL1 Old Description=Header, 16-Pin, Dual row, Right Angle New Description=Header, 17-Pin, Dual row, Right Angle
+Added Pin To Net: NetName=Fan_EN Pin=CONTROL1-29
+Added Pin To Net: NetName=Fan_EN Pin=CONTROL1-30
+Added Pin To Net: NetName=+5 Pin=CONTROL1-31
+Added Pin To Net: NetName=+5 Pin=CONTROL1-32
+Added Pin To Net: NetName=GND Pin=CONTROL1-33
+Added Pin To Net: NetName=GND Pin=CONTROL1-34

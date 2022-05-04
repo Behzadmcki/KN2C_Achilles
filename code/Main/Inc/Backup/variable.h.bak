@@ -1,0 +1,180 @@
+#ifndef _VAR
+#define	_VAR
+
+#include "stm32f1xx_hal.h"
+#include "Bus.hpp"
+
+
+#define TIMCallBack   void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+#define TxCallBack    void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+#define RxCallBack    void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) 
+
+#define busy 1
+#define ready 0
+
+#define NrfUsart  &huart3 
+#define BusUsart  &huart1
+#define UsrUsart  &huart2
+
+	// USART2 USR   USART1-> bus  USART3-> nrf
+
+#define ReceiveHeader false
+#define ReceiveData  true
+
+#define PWMMode  1
+#define CNTMode  2
+#define FDBMode  3
+
+#define OK       5
+#define NOTOK    6
+
+#define Stop_Mode     58
+#define Forward_Mode  59
+#define Reverse_Mode  60
+
+#define Toggle_LED_red		  HAL_GPIO_TogglePin(LED1_GPIO_Port , LED1_Pin)
+#define Toggle_LED_blue	  HAL_GPIO_TogglePin(LED2_GPIO_Port , LED2_Pin)
+#define WritePin_LED_red		HAL_GPIO_WritePin(LED1_GPIO_Port , LED1_Pin,GPIO_PIN_SET)
+#define WritePin_LED_blue		HAL_GPIO_WritePin(LED1_GPIO_Port , LED2_Pin,GPIO_PIN_SET)
+
+
+#define EN_ADM_Reset      HAL_GPIO_WritePin (En_Max_GPIO_Port ,En_Max_Pin ,GPIO_PIN_RESET )
+#define EN_ADM_Set        HAL_GPIO_WritePin (En_Max_GPIO_Port ,En_Max_Pin ,GPIO_PIN_SET )
+
+#define		Slave1_AD				0x20+1
+#define		Rm1_ID					1
+#define		Rm2_ID					2
+#define		FF_ID						3
+
+
+#define		Slave2_AD				0x20+2
+#define		Lm1_ID					1
+#define		Lm2_ID					2
+#define		BF_ID						3
+
+#define		Slave3_AD				0x20+3
+#define		A0_ID						1
+#define		A1_ID						2
+#define		A2_ID						3
+
+#define 	Slave4_AD				0x20+4
+#define		Pr_ID						1
+#define		Roll_ID					2
+#define		Pitch_ID				3
+
+#define   Head_AD         0x20+5
+
+
+
+extern BUS bus;
+extern HeaderPacket  PWM_pkg;
+extern HeaderPacket  CNT_pkg;
+extern HeaderPacket  FDB_pkg;
+
+extern int headerCounter; 
+extern int mainCounter;
+extern int packageState;
+extern int fillCounter;
+extern uint8_t recHeader;
+extern uint8_t recData[32];
+extern uint8_t sendBuffer[15];
+extern int motorMode;
+extern int vectorCheck[35];
+extern int counter;
+extern int driverAD ;
+extern int UARTData;
+extern int test ;
+extern int timer;
+extern int mainOrder;
+extern int headerOrder;
+extern int sendOrder;
+extern int bufferCounter;
+extern int sendCheckSum;
+extern int recieveCheckSum;
+extern int microStatus;
+extern int DMAStatus;
+extern int recStatus;
+extern int busStatus;
+extern int RxUart;
+extern int nrfStatus;
+extern UART_HandleTypeDef *usartType;
+extern int dataLenght;
+#endif
+
+
+
+
+
+
+
+
+    //***************************************************************************************************
+    //-----  Mode  ---->|    PWM        |   CONTROL  |
+    //***************************************************************************************************
+    // 0->     rm       |    dir        |      //    |      
+    //---------------------------------------------------------------------------------------------------
+    // 1->     rm       |    speed      |      //    |       
+    //---------------------------------------------------------------------------------------------------
+    // 2->     lm       |    dir        |      //    |    
+    //---------------------------------------------------------------------------------------------------
+    // 3->     lm       |    speed      |      //    |        
+    //---------------------------------------------------------------------------------------------------
+    // 4->     FF       |    dir        |      //    |    
+    //----------------------------------------------------------------------------------------------------
+    // 5->     FF       |    speed      |      //    |        
+    //----------------------------------------------------------------------------------------------------
+    // 6->     BF       |    dir        |      //    |           
+    //----------------------------------------------------------------------------------------------------
+    // 7->     BF       |    speed      |      //    |      
+    //----------------------------------------------------------------------------------------------------
+    // 8->     ARM0     |    dir        |   POS_high |       
+    //-----------------------------------------------------------------------------------------------------
+    // 9->     ARM0     |    speed      |   POS_low  |       
+    //-----------------------------------------------------------------------------------------------------
+    // 10->    ARM1     |    dir        |   POS_high |       
+    //-----------------------------------------------------------------------------------------------------
+    // 11->    ARM1     |    speed      |   POS_low  |         
+    //------------------------------------------------------------------------------------------------------
+    // 12->    ARM2     |    dir        |   POS_high |             
+    //------------------------------------------------------------------------------------------------------
+    // 13->    ARM2     |    speed      |   POS_low  |       
+    //--------------------------------------------------------------------------------------------------------
+    // 14->    Pr       |    dir        |      //    |
+    //-------------------------------------------------------------------------------------------------------
+    // 15->    Pr       |    speed      |      //    |          
+    //--------------------------------------------------------------------------------------------------------
+    // 16->    Pitch    |    dir        |      //    |       
+    //--------------------------------------------------------------------------------------------------------
+    // 17->    Head     |    servo_roll  |      //    |      
+    //-------------------------------------------------------------------------------------------------------
+    // 18->    Yaw      |    dir        |      //    |      
+    //--------------------------------------------------------------------------------------------------------
+    // 19->    Gr       |    dir        |      //    |  
+    //--------------------------------------------------------------------------------------------------------
+    // 20->    Gr       |    on_off     |      //    |     
+    //--------------------------------------------------------------------------------------------------------
+    // 21->    Head     |    servo yaw  |      //    |  
+    //--------------------------------------------------------------------------------------------------------
+    // 22->    Head     |  servo pitch  |      //    |               
+    //-------------------------------------------------------------------------------------------------------
+    // 23->    Head     |    LED        |      //    |
+    //-------------------------------------------------------------------------------------------------------
+    // 24->    Thermal  |    on_off     |      //    |
+    //-------------------------------------------------------------------------------------------------------
+    // 25->    Main     |    IO         |      //    |
+    //-------------------------------------------------------------------------------------------------------
+    // 26->  Cam_Switch |    IO         |      //    |
+    //--------------------------------------------------------------------------------------------------------
+    // 27->    Arm3     |		NULL				|  POS_high	 |        
+    //--------------------------------------------------------------------------------------------------------
+    // 28->    Arm3     |   NULL        |  POS_low   |
+    //--------------------------------------------------------------------------------------------------------
+    // 29->    Head     |turnOnOff 12 head|turnOnOff 12 head|                     
+    //**********************************************************************************************************
+		
+		
+		
+		
+
+
+

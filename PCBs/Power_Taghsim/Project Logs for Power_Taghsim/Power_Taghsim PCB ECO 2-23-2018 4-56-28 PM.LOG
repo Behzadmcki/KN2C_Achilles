@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=PGND Pin=L1-1
+Removed Pin From Net: NetName=GND Pin=L1-2
+Removed Pin From Net: NetName=+16 Pin=P2-+
+Removed Pin From Net: NetName=PGND Pin=P2--
+Removed Pin From Net: NetName=+16 Pin=P9-+
+Removed Pin From Net: NetName=PGND Pin=P9--
+Removed Member From Class: ClassName=Power_Taghsim Member=L1
+Removed Member From Class: ClassName=Power_Taghsim Member=P2
+Removed Member From Class: ClassName=Power_Taghsim Member=P9

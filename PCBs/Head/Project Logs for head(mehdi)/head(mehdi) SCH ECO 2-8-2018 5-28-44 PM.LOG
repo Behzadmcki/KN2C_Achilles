@@ -1,0 +1,10 @@
+Change Component Designator: Old Designator=LED2 New Designator=LED3
+Change Component Designator: Old Designator=LED3 New Designator=LED4
+Change Component Designator: Old Designator=LED New Designator=LED2
+Change Component Designator: Old Designator=R17 New Designator=R19
+Change Component Designator: Old Designator=R18 New Designator=R20
+Change Component Designator: Old Designator=R19 New Designator=R17
+Change Component Designator: Old Designator=R20 New Designator=R18
+Change Component Designator: Old Designator=R? New Designator=R23
+Change Component Designator: Old Designator=Thermal New Designator=Thermal1
+Change Component Designator: Old Designator=U? New Designator=U7

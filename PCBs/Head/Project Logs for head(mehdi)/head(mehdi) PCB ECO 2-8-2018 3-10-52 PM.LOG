@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=P3 Old Footprint=rj22 New Footprint=jp circular 4
+Change Component Designator: OldDesignator=R24 NewDesignator=R21
+Change Component Designator: OldDesignator=R26 NewDesignator=R22

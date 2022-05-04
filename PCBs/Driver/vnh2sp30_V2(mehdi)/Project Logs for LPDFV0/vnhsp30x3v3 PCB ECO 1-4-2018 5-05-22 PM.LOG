@@ -1,0 +1,16 @@
+Added Pin To Net: NetName=ICINA-1 Pin=CONTROL1-1
+Added Pin To Net: NetName=ICPWM-1 Pin=CONTROL1-3
+Added Pin To Net: NetName=CURRENT1 Pin=CONTROL1-5
+Added Pin To Net: NetName=ICINB-1 Pin=CONTROL1-7
+Added Pin To Net: NetName=ICINA-2 Pin=CONTROL1-9
+Added Pin To Net: NetName=ICPWM-2 Pin=CONTROL1-11
+Added Pin To Net: NetName=Current2 Pin=CONTROL1-13
+Added Pin To Net: NetName=ICINB-2 Pin=CONTROL1-15
+Added Pin To Net: NetName=ICINA-3 Pin=CONTROL1-17
+Added Pin To Net: NetName=ICPWM-3 Pin=CONTROL1-19
+Added Pin To Net: NetName=D- Pin=CONTROL1-21
+Added Pin To Net: NetName=D+ Pin=CONTROL1-23
+Added Pin To Net: NetName=Current3 Pin=CONTROL1-25
+Added Pin To Net: NetName=ICINB-3 Pin=CONTROL1-27
+Added Pin To Net: NetName=+5 Pin=CONTROL1-29
+Added Pin To Net: NetName=GND Pin=CONTROL1-31

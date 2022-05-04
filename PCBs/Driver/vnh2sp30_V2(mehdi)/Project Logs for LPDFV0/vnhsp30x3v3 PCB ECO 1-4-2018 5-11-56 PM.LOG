@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=ICINA-1 Pin=CONTROL1-17
+Removed Pin From Net: NetName=ICINA-1 Pin=CONTROL1-18
+Removed Pin From Net: NetName=ICPWM-1 Pin=CONTROL1-19
+Removed Pin From Net: NetName=ICPWM-1 Pin=CONTROL1-20
+Removed Pin From Net: NetName=D- Pin=CONTROL1-21
+Removed Pin From Net: NetName=D- Pin=CONTROL1-22
+Removed Pin From Net: NetName=D+ Pin=CONTROL1-23
+Removed Pin From Net: NetName=D+ Pin=CONTROL1-24
+Added Pin To Net: NetName=D- Pin=CONTROL1-17
+Added Pin To Net: NetName=D- Pin=CONTROL1-18
+Added Pin To Net: NetName=D+ Pin=CONTROL1-19
+Added Pin To Net: NetName=D+ Pin=CONTROL1-20
+Added Pin To Net: NetName=ICINA-1 Pin=CONTROL1-21
+Added Pin To Net: NetName=ICINA-1 Pin=CONTROL1-22
+Added Pin To Net: NetName=ICPWM-1 Pin=CONTROL1-23
+Added Pin To Net: NetName=ICPWM-1 Pin=CONTROL1-24

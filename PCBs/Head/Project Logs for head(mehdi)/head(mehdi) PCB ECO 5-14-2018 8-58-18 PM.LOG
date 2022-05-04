@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=ex_ADC Pin=U1-16
+Added Pin To Net: NetName=Servo_12_EN Pin=U1-16
+Added Member To Class: ClassName=head(mehdi) Member=Component Camera_power4 Header 2

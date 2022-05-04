@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=P1 NewDesignator=P6
+Change Component Designator: OldDesignator=P1 NewDesignator=P7
+Change Component Designator: OldDesignator=P1 NewDesignator=P8
+Change Component Designator: OldDesignator=P1 NewDesignator=P9
+Change Component Designator: OldDesignator=P? NewDesignator=P4
+Change Component Designator: OldDesignator=P? NewDesignator=P5
+Added Member To Class: ClassName=drivers Member=Component P5 BUS connector
+Added Member To Class: ClassName=drivers Member=Component P6 XT30
+Added Member To Class: ClassName=drivers Member=Component P7 jp_circular
+Added Member To Class: ClassName=drivers Member=Component P8 smd
+Added Member To Class: ClassName=drivers Member=Component P9 smd

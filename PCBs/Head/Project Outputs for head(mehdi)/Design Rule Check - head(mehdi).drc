@@ -1,0 +1,73 @@
+Protel Design System Design Rule Check
+PCB File : D:\Robotic Project\PCBs\head(mehdi)\head(mehdi).PcbDoc
+Date     : 2/26/2018
+Time     : 2:06:09 PM
+
+WARNING: Your board contains 2 shelved polygons - copper connectivity will not be reported correctly. Unshelve polygons and re-run DRC check before  producing manufacturing outputs.
+   Polygon named: Bottom Layer-No Net In net GND On Top Layer
+   Polygon named: Bottom Layer-No Net In net GND On Bottom Layer
+
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=13mil) (All),(InPolygon)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5216mil,4828mil) from Top Layer to Bottom Layer And Via (5217mil,4792mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5293mil,4828mil) from Top Layer to Bottom Layer And Via (5293mil,4866mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5885mil,4944mil) from Top Layer to Bottom Layer And Via (5923mil,4944mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4828mil,5748mil) from Top Layer to Bottom Layer And Via (4866mil,5748mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5254.5mil,4828mil) from Top Layer to Bottom Layer And Via (5254.5mil,4866mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4703mil,3972mil) from Top Layer to Bottom Layer And Via (4741mil,3972mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5216mil,4828mil) from Top Layer to Bottom Layer And Via (5216mil,4866mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5846mil,4944mil) from Top Layer to Bottom Layer And Via (5885mil,4944mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4741mil,3972mil) from Top Layer to Bottom Layer And Via (4780mil,3972mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5217mil,4792mil) from Top Layer to Bottom Layer And Via (5294mil,4788mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4866mil,5748mil) from Top Layer to Bottom Layer And Via (4905mil,5748mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5294mil,4788mil) from Top Layer to Bottom Layer And Via (5369mil,4746mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5254.5mil,4828mil) from Top Layer to Bottom Layer And Via (5293mil,4828mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5216mil,4866mil) from Top Layer to Bottom Layer And Via (5254.5mil,4866mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (5293mil,4866mil) from Top Layer to Bottom Layer And Via (5846mil,4944mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4780mil,3972mil) from Top Layer to Bottom Layer And Via (5217mil,4792mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4905mil,5748mil) from Top Layer to Bottom Layer And Track (4939mil,6094mil)(4939mil,6095mil) on Bottom Layer 
+Rule Violations :17
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+   Violation between Modified Polygon: Polygon Shelved  (No Net) on Connections 
+   Violation between Modified Polygon: Polygon Shelved  (No Net) on Connections 
+Rule Violations :2
+
+Processing Rule : Width Constraint (Min=10mil) (Max=100mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (Disabled)(All)
+Rule Violations :0
+
+
+Violations Detected : 19
+Time Elapsed        : 00:00:02

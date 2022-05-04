@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=PGND Pin=Camera_power1-1
+Removed Pin From Net: NetName=PGND Pin=Camera_power2-1
+Removed Pin From Net: NetName=PGND Pin=Camera_power3-1
+Removed Pin From Net: NetName=PGND Pin=Camera_power4-1
+Added Pin To Net: NetName=GND Pin=Camera_power1-1
+Added Pin To Net: NetName=GND Pin=Camera_power2-1
+Added Pin To Net: NetName=GND Pin=Camera_power3-1
+Added Pin To Net: NetName=GND Pin=Camera_power4-1

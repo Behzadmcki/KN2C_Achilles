@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-B
+Added Pin To Net: NetName=Power_12_EN Pin=Q1-C
+Added Pin To Net: NetName=GND Pin=Q1-E
+Added Member To Class: ClassName=Power_Taghsim Member=Component P11 XT60
+Added Member To Class: ClassName=Power_Taghsim Member=Component P14 XT60

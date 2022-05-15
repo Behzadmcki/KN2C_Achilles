@@ -1,4 +1,5 @@
 # KN2C_Achilles
 
 
-![plot](./pics/achilles.png)
+![plot](./pics/1.png)
+![plot](./pics/3.jpg)

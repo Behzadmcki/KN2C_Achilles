@@ -16,7 +16,7 @@ void BUS::BusInit()
 void BUS::ReadAD (void )
 {
 
-	globalDriverAD = 0x20 + 1	;
+	globalDriverAD = 0x20 + 2	;
 }
 
 
@@ -68,7 +68,12 @@ void BUS::CheckHeader (struct HeaderPacket* HeaderPacket)
 		}
 		case 2:
 		{
-			if ( recHeader == 'M' )    HeaderPacket->headerCounter++;
+			if ( recHeader == 'M' )    
+			{
+									HAL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);	
+
+				HeaderPacket->headerCounter++;
+			}
       else if(recHeader == 'P')  HeaderPacket->headerCounter=1;
 			else                                    			 HeaderPacket->headerCounter=0;
 	    break; 

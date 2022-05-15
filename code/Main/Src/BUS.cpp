@@ -65,7 +65,6 @@ void BUS::CheckHeader (struct HeaderPacket* HeaderPacket)
 		case 2:
 			if ( recHeader == 'M'  )   // tayid header
       { 
-				
 				packetSize = HeaderPacket->pkgSize   ;
 				recStatus  = ReceiveData ;
   			headerMode=HeaderPacket->packetID;  
@@ -82,13 +81,29 @@ void BUS::Fillbuffer ( struct HeaderPacket* HeaderPacket)
 	{
 		
 		for (fillCounter= 3;fillCounter<packetSize  ;fillCounter++ )
+		{
 	     main_buff.at(fillCounter ) = recData[fillCounter - 3] ;
+		}
+					sendBuffer_test1 = main_buff.at(3);
+					sendBuffer_test2 = main_buff.at(4);
+					sendBuffer_test3 = main_buff.at(5);
+					sendBuffer_test4 = main_buff.at(6);
+		      sendBuffer_test5 = main_buff.at(7);
+					sendBuffer_test6 = main_buff.at(8);
+					sendBuffer_test7 = main_buff.at(9);
+		      sendBuffer_test8 = main_buff.at(10);
+					sendBuffer_test9 = main_buff.at(11);
+					sendBuffer_test10 = main_buff.at(12);
+					sendBuffer_test11 = main_buff.at(13);
+					sendBuffer_test12 = main_buff.at(14);
+					
+		
 	}
 
 
 	
-		for (int counter=0;counter<35;counter++)
-			 recData[counter] = 0;
+//		for (int counter=0;counter<35;counter++)
+//			 recData[counter] = 0;
 		CheckEnd(HeaderPacket) ;
 }
 
@@ -105,7 +120,7 @@ void BUS::CheckEnd (struct HeaderPacket* HeaderPacket )
 				recieveCheckSum += main_buff.at(counter);
 				recieveCheckSum = recieveCheckSum %256;	
 	   }
-  	if ( recieveCheckSum  == main_buff.at( packetSize -2 ) && '\r' == main_buff.at( packetSize  -1 ) )  
+  	if (/* recieveCheckSum  == main_buff.at( packetSize -2 ) &&*/ '\r' == main_buff.at( packetSize  -1 ) )  
 	  {	
 			
 			busStatus = busy;
@@ -140,6 +155,8 @@ void BUS::SendPacket (int driverAD,int DATA1, int DATA2, int DATA3,int DATA4, in
 					sendBuffer[10] = DATA6;
 					sendBuffer[11] = DATA7;
 					sendBuffer[12] = DATA8;
+	
+	        
 		
 		      sendCheckSum= 0;
 					for(int counter =3;counter<15 - 2;counter++)  
@@ -201,7 +218,7 @@ void BUS::SendPkgPWM()
 			SendPacket (Slave2_AD , main_buff.at(9),main_buff.at(10),main_buff.at(11),main_buff.at(12),main_buff.at(13),main_buff.at(14),NULL,NULL);
 			
 		  mainOrder = busy;
-		  Toggle_LED_red ;
+//		  Toggle_LED_red ;
 		break;
 			
 	};

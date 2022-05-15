@@ -2,12 +2,28 @@
 #include "Bus.hpp"
 #include <variable.h>
 
+
 BUS bus;
 
 
 HeaderPacket  PWM_pkg('P', 'W', 'M', 1, 40);
 HeaderPacket  HED_pkg('H', 'E', 'D', 4, 14);
-
+int sendBuffer_test1;
+int sendBuffer_test2;
+int sendBuffer_test3;
+int sendBuffer_test4;
+int sendBuffer_test5;
+int sendBuffer_test6;
+int sendBuffer_test7;
+int sendBuffer_test8;
+int sendBuffer_test9;
+int sendBuffer_test10;
+int sendBuffer_test11;
+int sendBuffer_test12;
+int sendBuffer_test13;
+int sendBuffer_test14;
+int sendBuffer_test15;
+int sendBuffer_test16;
 
 int test = 0;
 int headerCounter = 0;

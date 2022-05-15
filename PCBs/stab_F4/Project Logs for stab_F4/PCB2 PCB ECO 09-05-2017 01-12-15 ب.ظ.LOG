@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=EN_MAX Pin=U1-29
+Added Pin To Net: NetName=EN_MAX Pin=U3-2
+Added Pin To Net: NetName=EN_MAX Pin=U3-3
+Added Net: Name=EN_MAX

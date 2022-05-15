@@ -1,0 +1,4 @@
+Added Component: Designator=S2(Screw Holw 3-6 mm)
+Added Component: Designator=S10(Screw Holw 3-6 mm)
+Added Member To Class: ClassName=Sheet2 Member=Component S2 Screw Hole
+Added Member To Class: ClassName=Sheet2 Member=Component S10 Screw Hole

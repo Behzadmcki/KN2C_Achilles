@@ -107,6 +107,25 @@ extern int mainOrder;
 extern int headerOrder;
 extern int sendDriverStatus;
 
+
+extern int sendBuffer_test1;
+extern int sendBuffer_test2;
+extern int sendBuffer_test3;
+extern int sendBuffer_test4;
+extern int sendBuffer_test5;
+extern int sendBuffer_test6;
+extern int sendBuffer_test7;
+extern int sendBuffer_test8;
+extern int sendBuffer_test9;
+extern int sendBuffer_test10;
+extern int sendBuffer_test11;
+extern int sendBuffer_test12;
+extern int sendBuffer_test13;
+extern int sendBuffer_test14;
+extern int sendBuffer_test15;
+extern int sendBuffer_test16;
+
+
 #endif
 
 

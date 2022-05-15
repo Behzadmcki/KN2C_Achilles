@@ -1,0 +1,8 @@
+Added Component: Designator=R100(J1-0603)
+Added Component: Designator=R111(J1-0603)
+Added Pin To Net: NetName=+3.3 Pin=R100-1
+Added Pin To Net: NetName=SCL Pin=R100-2
+Added Pin To Net: NetName=+3.3 Pin=R111-1
+Added Pin To Net: NetName=SDA Pin=R111-2
+Added Member To Class: ClassName=Sheet2 Member=Component R100 4.7K
+Added Member To Class: ClassName=Sheet2 Member=Component R111 4.7K

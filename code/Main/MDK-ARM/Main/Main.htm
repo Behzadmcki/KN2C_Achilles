@@ -3,7 +3,7 @@
 <title>Static Call Graph - [Main\Main.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Main\Main.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun May 01 18:47:44 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat May 07 19:15:26 2022
 <BR><P>
 <H3>Maximum Stack Usage =        544 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -749,9 +749,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::CheckEnd(HeaderPacket*)
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::CheckEnd(HeaderPacket*)
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::HipHop()
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::SendPkgPWM()
 </UL>
 
 <P><STRONG><a name="[af]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin))
@@ -936,8 +936,8 @@ Global Symbols
 <P><STRONG><a name="[c0]"></a>HAL_TIM_Base_MspInit</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, tim.o(i.HAL_TIM_Base_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 </UL>
@@ -1058,11 +1058,11 @@ Global Symbols
 <P><STRONG><a name="[db]"></a>HAL_UART_MspInit</STRONG> (Thumb, 576 bytes, Stack size 56 bytes, usart.o(i.HAL_UART_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = HAL_UART_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_Error_Handler
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
@@ -1076,10 +1076,11 @@ Global Symbols
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::UsartReceive(UART_HandleTypeDef*, int)
 </UL>
 
-<P><STRONG><a name="[df]"></a>HAL_UART_RxCpltCallback</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, main.o(i.HAL_UART_RxCpltCallback))
+<P><STRONG><a name="[df]"></a>HAL_UART_RxCpltCallback</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, main.o(i.HAL_UART_RxCpltCallback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 520<LI>Call Chain = HAL_UART_RxCpltCallback &rArr; BUS::GetPacket() &rArr; BUS::Fillbuffer(HeaderPacket*) &rArr; BUS::CheckEnd(HeaderPacket*) &rArr; std::vector&lang;char, std::allocator&lang;char&rang;&rang;::at(unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::GetPacket()
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::UsartReceive(UART_HandleTypeDef*, int)
 </UL>
@@ -1122,8 +1123,8 @@ Global Symbols
 <P><STRONG><a name="[e2]"></a>MX_DMA_Init</STRONG> (Thumb, 120 bytes, Stack size 8 bytes, dma.o(i.MX_DMA_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = MX_DMA_Init &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1323,7 +1324,7 @@ Global Symbols
 
 <P><STRONG><a name="[166]"></a>HeaderPacket::HeaderPacket__sub_object(char, char, char, char, char)</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, variable.o(i._ZN12HeaderPacketC1Eccccc), UNUSED)
 
-<P><STRONG><a name="[ff]"></a>BUS::Fillbuffer(HeaderPacket*)</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, bus.o(i._ZN3BUS10FillbufferEP12HeaderPacket))
+<P><STRONG><a name="[ff]"></a>BUS::Fillbuffer(HeaderPacket*)</STRONG> (Thumb, 238 bytes, Stack size 24 bytes, bus.o(i._ZN3BUS10FillbufferEP12HeaderPacket))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = BUS::Fillbuffer(HeaderPacket*) &rArr; BUS::CheckEnd(HeaderPacket*) &rArr; std::vector&lang;char, std::allocator&lang;char&rang;&rang;::at(unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real
 </UL>
 <BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::vector&lang;char, std::allocator&lang;char&rang;&rang;::at(unsigned)
@@ -1341,11 +1342,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::SendPkgPWM()
 </UL>
 
-<P><STRONG><a name="[103]"></a>BUS::SendPkgPWM()</STRONG> (Thumb, 216 bytes, Stack size 56 bytes, bus.o(i._ZN3BUS10SendPkgPWMEv))
+<P><STRONG><a name="[103]"></a>BUS::SendPkgPWM()</STRONG> (Thumb, 206 bytes, Stack size 56 bytes, bus.o(i._ZN3BUS10SendPkgPWMEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = BUS::SendPkgPWM() &rArr; std::vector&lang;char, std::allocator&lang;char&rang;&rang;::at(unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::vector&lang;char, std::allocator&lang;char&rang;&rang;::at(unsigned)
+<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::vector&lang;char, std::allocator&lang;char&rang;&rang;::at(unsigned)
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BUS::SendPacket(int, int, int, int, int, int, int, int, int)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1386,7 +1386,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[101]"></a>BUS::CheckEnd(HeaderPacket*)</STRONG> (Thumb, 144 bytes, Stack size 32 bytes, bus.o(i._ZN3BUS8CheckEndEP12HeaderPacket))
+<P><STRONG><a name="[101]"></a>BUS::CheckEnd(HeaderPacket*)</STRONG> (Thumb, 126 bytes, Stack size 32 bytes, bus.o(i._ZN3BUS8CheckEndEP12HeaderPacket))
 <BR><BR>[Stack]<UL><LI>Max Depth = 480<LI>Call Chain = BUS::CheckEnd(HeaderPacket*) &rArr; std::vector&lang;char, std::allocator&lang;char&rang;&rang;::at(unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
@@ -1941,8 +1941,8 @@ Global Symbols
 <LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::ctype(const std::ctype_base::mask*, bool, unsigned)
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_exception::_C_vformat(int, std::__va_list)
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, const char*, std::__va_list)
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_array_new_general
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_rwcats_cpp_64e8068e
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_array_new_general
 </UL>
 
 <P><STRONG><a name="[f5]"></a>operator new(unsigned)</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, new.o(i._Znwj))
@@ -2042,8 +2042,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a8]"></a>assert_failed</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, main.o(i.assert_failed))
-<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Stop
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_CLKSourceConfig
@@ -2059,6 +2058,7 @@ Global Symbols
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig(UART_HandleTypeDef*)
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Start_IT
 </UL>

@@ -89,6 +89,9 @@ RxCallBack
 	if(huart->Instance==UART4 )  // bus
 	{
     	bus.GetPacket();
+		
+			HAL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);	
+
 
 			if( recStatus == ReceiveHeader)
 			{
@@ -146,6 +149,17 @@ int main(void)
   MX_TIM3_Init();
 	MX_TIM12_Init();
 	
+	HAL_TIM_Base_Start(&htim4);
+	HAL_TIM_Base_Start(&htim5);
+	HAL_TIM_Base_Start(&htim9);
+	
+	
+	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
+	HAL_TIM_PWM_Start(&htim5,TIM_CHANNEL_3);
+	HAL_TIM_PWM_Start(&htim9,TIM_CHANNEL_1);
+
+
+	
 
 
   /* USER CODE BEGIN 2 */
@@ -155,10 +169,18 @@ HAL_UART_Receive_IT(BusUsart ,&recHeader,1);
 
 // HAL_TIM_Base_Start_IT (&htim12);
  
- 
+// 		__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, 2400) ;
+//		__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, 2400) ;
+//		__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, 2400) ;
+//		TIM4->CCR3 = 2400;
+//		TIM5->CCR3 = 2400;
+//		TIM9->CCR1 = 2400;
+
 // MOTOR::MotorInit();
  
-
+//	HAL_GPIO_WritePin(PWM_3_GPIO_Port, PWM_3_Pin, GPIO_PIN_SET);
+//	HAL_GPIO_WritePin(PWM_2_GPIO_Port, PWM_2_Pin, GPIO_PIN_SET);
+//	HAL_GPIO_WritePin(PWM_1_GPIO_Port, PWM_1_Pin, GPIO_PIN_SET);
 
 
  /* USER CODE END 2 */
@@ -172,27 +194,34 @@ HAL_UART_Receive_IT(BusUsart ,&recHeader,1);
 		
   /* USER CODE BEGIN 3 */
 		
+
+		
+		
 		if(dastan==1)
 		{
+					dastan=0;
+
 			if(vectorCheck[5]== Forward_Mode)
 				{
-					HAL_GPIO_WritePin(INA_1_GPIO_Port,INA_1_Pin,GPIO_PIN_SET);
-					HAL_GPIO_WritePin(INB_1_GPIO_Port,INB_1_Pin,GPIO_PIN_RESET);
-					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, 2400) ;
-					dastan=0;
+					HAL_GPIO_WritePin(INA_3_GPIO_Port,INA_3_Pin,GPIO_PIN_SET);
+					HAL_GPIO_WritePin(INB_3_GPIO_Port,INB_3_Pin,GPIO_PIN_RESET);
+					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, uint32_t(vectorCheck[6]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, 2400) ;
+
 				}
 				else if(vectorCheck[5]==Reverse_Mode)
 				{
-					HAL_GPIO_WritePin(INA_1_GPIO_Port,INA_1_Pin,GPIO_PIN_RESET);
-		      HAL_GPIO_WritePin(INB_1_GPIO_Port,INB_1_Pin,GPIO_PIN_SET);
-					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, 2400) ;
-					dastan=0;
+					HAL_GPIO_WritePin(INA_3_GPIO_Port,INA_3_Pin,GPIO_PIN_RESET);
+		      HAL_GPIO_WritePin(INB_3_GPIO_Port,INB_3_Pin,GPIO_PIN_SET);
+					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, uint32_t(vectorCheck[6]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, 2400) ;
 				}
 				else
 				{
-					HAL_GPIO_WritePin(INA_1_GPIO_Port,INA_1_Pin,GPIO_PIN_SET);
-					HAL_GPIO_WritePin(INB_1_GPIO_Port,INB_1_Pin,GPIO_PIN_SET);
-					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, 2400) ;
+					HAL_GPIO_WritePin(INA_3_GPIO_Port,INA_3_Pin,GPIO_PIN_SET);
+					HAL_GPIO_WritePin(INB_3_GPIO_Port,INB_3_Pin,GPIO_PIN_SET);
+					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, uint32_t(vectorCheck[6]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, 2400) ;
 					
 				}
 				
@@ -201,38 +230,47 @@ HAL_UART_Receive_IT(BusUsart ,&recHeader,1);
 				{
 					HAL_GPIO_WritePin(INA_2_GPIO_Port,INA_2_Pin,GPIO_PIN_SET);
 					HAL_GPIO_WritePin(INB_2_GPIO_Port,INB_2_Pin,GPIO_PIN_RESET);
-					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, 2400) ;
+					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, uint32_t(vectorCheck[8]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, 2400) ;
 				}
 				else if(vectorCheck[7]==Reverse_Mode)
 				{
 					HAL_GPIO_WritePin(INA_2_GPIO_Port,INA_2_Pin,GPIO_PIN_RESET);
 		      HAL_GPIO_WritePin(INB_2_GPIO_Port,INB_2_Pin,GPIO_PIN_SET);
-					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, 2400) ;
+					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, int32_t(vectorCheck[8]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, 2400) ;
+
 				}
 				else
 				{
 					HAL_GPIO_WritePin(INA_2_GPIO_Port,INA_2_Pin,GPIO_PIN_SET);
 					HAL_GPIO_WritePin(INB_2_GPIO_Port,INB_2_Pin,GPIO_PIN_SET);
-					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, 2400) ;
+					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, int32_t(vectorCheck[8]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3, 2400) ;
+
 				}
 				
 				if(vectorCheck[9]== Forward_Mode)
 				{
-					HAL_GPIO_WritePin(INA_3_GPIO_Port,INA_3_Pin,GPIO_PIN_SET);
-					HAL_GPIO_WritePin(INB_3_GPIO_Port,INB_3_Pin,GPIO_PIN_RESET);
-					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, 2400) ;
+					HAL_GPIO_WritePin(INA_1_GPIO_Port,INA_1_Pin,GPIO_PIN_SET);
+					HAL_GPIO_WritePin(INB_1_GPIO_Port,INB_1_Pin,GPIO_PIN_RESET);
+					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, int32_t(vectorCheck[10]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, 2400) ;
+
 				}
 				else if(vectorCheck[9]==Reverse_Mode)
 				{
-					HAL_GPIO_WritePin(INA_3_GPIO_Port,INA_3_Pin,GPIO_PIN_RESET);
-		      HAL_GPIO_WritePin(INB_3_GPIO_Port,INB_3_Pin,GPIO_PIN_SET);
-					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, 2400) ;
+					HAL_GPIO_WritePin(INA_1_GPIO_Port,INA_1_Pin,GPIO_PIN_RESET);
+		      HAL_GPIO_WritePin(INB_1_GPIO_Port,INB_1_Pin,GPIO_PIN_SET);
+					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, int32_t(vectorCheck[10]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, 2400) ;
 				}
 				else
 				{
-					HAL_GPIO_WritePin(INA_3_GPIO_Port,INA_3_Pin,GPIO_PIN_SET);
-					HAL_GPIO_WritePin(INB_3_GPIO_Port,INB_3_Pin,GPIO_PIN_SET);
-					__HAL_TIM_SET_COMPARE(&htim9,TIM_CHANNEL_1, 2400) ;
+					HAL_GPIO_WritePin(INA_1_GPIO_Port,INA_1_Pin,GPIO_PIN_SET);
+					HAL_GPIO_WritePin(INB_1_GPIO_Port,INB_1_Pin,GPIO_PIN_SET);
+					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, int32_t(vectorCheck[10]*18.89)) ;
+//					__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3, 2400) ;
 				}
 				
 		}

@@ -5,18 +5,24 @@
 
 Gamepad::Gamepad(QObject *parent) : QObject(parent) , G_gamepad(0)
 {
-    connect(&updateTimer,SIGNAL(timeout()),this,SLOT(gamepadUpdate()));
+
+}
+void Gamepad::SetTimers()
+{
+    connect(&updateTimer,SIGNAL(timeout()),this,SLOT(Update()));
     connect(&openTimer,SIGNAL(timeout()),this,SLOT(openGamepad()));
 
     openTimer.start(2000);
 
+}
 
+void Gamepad::SetNetwork()
+{
     AchillesNetwork.set_client_IP("192.168.1.10",8585);
     AchillesNetwork.set_server_IP("192.168.1.11",8234);
 
-
-
 }
+
 void Gamepad::openGamepad()
 {
     if(!system("ls /dev/input/js0"))
@@ -32,12 +38,13 @@ void Gamepad::closeGamepad()
     updateTimer.stop();
 
 }
-void Gamepad::gamepadUpdate()
+
+/*
+ * recieve data from gamepad and store it in gamepadData array
+ */
+
+void Gamepad::Update()
 {
-
-  
-
-
     gamepadData[GP_Data::RY_Axis] = -G_gamepad->axisRightY();
     gamepadData[GP_Data::LY_Axis] = -G_gamepad->axisLeftY();
     gamepadData[GP_Data::RX_Axis] = G_gamepad->axisRightX();
@@ -106,8 +113,13 @@ void Gamepad::AchillesMakeData()
 
 
     /*
-     * Right -->3 Direction  , 4 PWM
-     * Left  -->9 Direction  , 10 PWM
+     * Right                 -->3  Direction  , 4  PWM
+     * Left                  -->9  Direction  , 10 PWM
+     * Front Flipper Right   -->5  Direction  , 6  PWM
+     * Front Flipper Left    -->7  Direction  , 8  PWM
+     * Back Flipper Right    -->11 Direction  , 12 PWM
+     * Back Flipper Left     -->13 Direction  , 14 PWM
+     *
 
     */
         for (int i =3; i<15; i++) {
